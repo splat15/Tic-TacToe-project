@@ -1,0 +1,66 @@
+@import '../../styles.scss';
+
+.overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100vw;
+      height: 90vh;
+      position: fixed;
+      top: 10vh;
+      left: 0px;
+      border-radius: 0px;
+}
+
+.overlay.hover {
+      background-color: rgba(0, 0, 0, 0.35);
+}
+
+.popup-window {
+      background-color: var(--primary-background-color);
+      height: min(max(70vh - 50px, 70px), 200px);
+      width: min(50vw, 500px);
+      position: unset;
+      border-radius: min(1.5vh, 1.5vw);
+      margin: auto;
+      margin-top: calc(50vh - (min(max(70vh - 50px, 70px), 200px)) / 2);
+      padding: 1vh;
+      overflow: scroll;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+}
+
+.popup-window::-webkit-scrollbar{
+      display:none;
+}
+
+.popup-window.hover {
+      background-color: var(--transparent-primary-background-color);
+}
+
+.message{
+      text-align: center;
+      font-size: min(min(8vw, 8vh), 50px);
+      margin: 0px;
+}
+
+.message.hover {
+      color: rgba(255, 255, 255, 0.5)
+}
+
+.new-game {
+      margin: 5px;
+      color: var(--primary-text-color);
+      background-color: var(--tertiary-background-color);
+      border-style: solid;
+      border-color: var(--tertiary-background-color);
+      border-radius: min(1.5vh, 1.5vw);
+      font-size: min(min(4vw, 4vh), 25px);
+      cursor: pointer;
+}
+
+.new-game.hover{
+      background-color: var(--transparent-primary-background-color);
+      border-color: var(--transparent-tertiary-background-color)
+}

@@ -1,0 +1,9 @@
+<div class="cell-div" 
+      [style.border-top-left-radius]="(this.cell == 0) ? 'min(1.5vh, 1.5vw)': '0px'"
+      [style.border-top-right-radius]="(this.cell == 2) ? 'min(1.5vh, 1.5vw)': '0px'"
+      [style.border-bottom-left-radius]="(this.cell == 6) ? 'min(1.5vh, 1.5vw)': '0px'"
+      [style.border-bottom-right-radius]="(this.cell == 8) ? 'min(1.5vh, 1.5vw)': '0px'"
+      [class.O]="xo == '◯'"
+      [class.X]="xo == '╳'">
+      <button class="cell-content" [style.color]="(xo == '_') ? 'transparent' : 'var(--primary-text-color)'" (click)="this.place()">{{xo}}</button>
+</div>

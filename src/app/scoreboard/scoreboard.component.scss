@@ -1,0 +1,89 @@
+@import '../../styles.scss';
+
+.scoreboard {
+      margin-top: 7vh;
+      background-color: var(--tertiary-background-color);
+      padding: 0.3vh;
+      padding-left: 0.5vw;
+      padding-right: 0.5vw;
+      font-size: min(min(3vw, 3vh), 50px);
+      border-bottom-left-radius: min(1.5vw, 1.5vh);
+      border-bottom-right-radius: min(1.5vw, 1.5vh);
+}
+
+.entry-text {
+      margin-top: 0.5vh;
+      margin-bottom: 0.5vh;
+      width: 50%;
+      text-align: center;
+      cursor: default;
+      overflow: hidden;
+      font-size: min(3vh, 3vw);
+}
+
+.entry-text.x {
+      color: rgb(245, 78, 78);
+      margin-bottom: 0.7vh;
+      margin-top: -0.7vh;
+}
+
+.entry-text.o {
+      color: rgb(74, 74, 243);
+      margin-bottom: 0.1vh;
+      margin-top: -0.1vh;
+}
+
+.entry-text.none {
+      color: var(--primary-text-color);
+}
+
+.entry {
+      display: flex;
+      flex-direction: row;
+}
+
+.entry-div {
+      height: auto;
+      max-height: 50vh;
+      overflow: scroll;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      border-bottom: 2vh;
+      padding-top: 2vh;
+      padding-bottom: 1vh;
+}
+
+.entry-div::-webkit-scrollbar {
+      display: none;
+}
+
+.devider {
+      width: 23vw;
+      height: 2vh;
+      margin: auto;
+      margin-top: -2vh;
+      border-top-style: solid;
+      border-top-color: var(--primary-background-color);
+      border-width: 0.2vh;
+      box-shadow: inset 0px 3vh 1.5vh -1.5vh var(--tertiary-background-color);
+      position: fixed;
+}
+
+.clear-button {
+      background-color: var(--secondary-background-color);
+      border-style: none;
+      color: var(--primary-text-color);
+      border-radius: min(1.5vh, 1.5vw);
+      height: min(4.5vh, 4.5vw);
+      width: min(15vh, 15vw);
+      font-size: inherit;
+      cursor: pointer;
+}
+
+.clear-div {
+      margin-top: 1.5vh;
+      margin-bottom: 1vh;
+      display: flex;
+      flex-direction: row; 
+      justify-content: center;
+}

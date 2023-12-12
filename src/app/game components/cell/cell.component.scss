@@ -1,0 +1,44 @@
+@import url('../../../styles.scss');
+
+.cell-div {
+      background-color: var(--tertiary-background-color);
+      color: var(--secondary-background-color);
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      border-style: solid;
+      border-width: min(1.5vw, 1.5vh);
+      text-align: center;
+}
+
+.cell-div:hover {
+      border-style: solid;
+      width: calc(100% - min(3vw, 3vh));
+      height: calc(100% - min(3vw, 3vh));
+      border-width: min(3vw, 3vh);
+}
+
+.cell-div.X {
+      background-color: rgb(90, 55, 55);
+}
+
+.cell-div.O {
+      background-color: rgb(55, 55, 85);
+}
+
+.cell-content {
+      margin: 0px;
+      padding: 0px;
+      height: 100%;
+      width: 100%;
+      line-height: calc(min(10vw, 10vh));
+      font-size: calc(min(10vw, 10vh));
+      background-color: transparent;
+      border-style: none;
+      color: var(--primary-text-color);
+      cursor: pointer;
+}
+
+.cell-content._ {
+      color: transparent;
+}

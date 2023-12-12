@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+      --primary-background-color: rgb(57, 57, 67);
+      --transparent-primary-background-color: rgba(36, 36, 43, 0.75);
+      --secondary-background-color: rgb(48, 49, 54);
+      --tertiary-background-color: rgb(64, 68, 75);
+      --transparent-tertiary-background-color: rgb(64, 68, 75, 0.75);
+      --primary-text-color: rgb(225, 225, 225);
+      overflow-x: hidden;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+}
+
+:root::-webkit-scrollbar {
+      display: none;
+}
+
+body {
+      margin: 0px;
+      font-family: Helvetica, sans-serif, Arial;
+}
+
+.body {
+      background-color: var(--primary-background-color);
+      color: var(--primary-text-color);
+      width: 100vw;
+      height: 90vh;
+      padding: 0px;
+}
+
+.content {
+      margin-top: 10vh;
+      height: 90vh;
+}

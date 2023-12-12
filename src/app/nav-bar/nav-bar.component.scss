@@ -1,0 +1,118 @@
+@import '../../styles.scss';
+
+.nav-bar-top {
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100vw;
+      height: 10vh;
+      top: 0px;
+      background-color: var(--primary-background-color);
+      box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.6);
+      border-bottom-width: 1px;
+}
+
+.nav {
+      height: 10vh;
+      overflow: hidden;
+      width: fit-content;
+      margin-left: 2vw;
+}
+
+.logo-link {
+      position: relative;
+      height: 100%;
+      display: inline-block;
+      text-align: center;
+      line-height: 10vh;
+      font-size: min(4vh, 4vw);
+      cursor: pointer;
+}
+
+.score {
+      width: 51vw;
+      height: 7vh;
+      margin-top: 1.5vh;
+      margin-bottom: 1.5vh;
+      border-radius: min(1.5vw, 1.5vh);
+      background-color: var(--tertiary-background-color);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.score.hover {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      box-shadow: none;
+}
+
+.score-div {
+      width: 55vw;
+      top: 0px;
+      left: 22.5vw;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      height: 10vh;
+}
+
+.x-score {
+      height: 100%;
+      color: rgb(245, 78, 78);
+      font-size: min(4vh, 4vw);
+      margin: 0px;
+      line-height: 7vh;
+}
+
+.o-score {
+      height: 100%;
+      color: rgb(74, 74, 243);
+      margin: 0px;
+      font-size: min(4vh, 4vw);
+      line-height: 7vh;
+}
+
+.score-text {
+      height: 100%;
+      margin: 0px;
+      margin-left: 2vw;
+      margin-right: 2vw;
+      font-size: min(4vh, 4vw);
+      line-height: 7vh;
+      letter-spacing: 10%;
+}
+
+.scoreboard {
+      display: none;
+      width: 25vw;
+      position: fixed;
+      top: 1.5vh;
+      left: 37.5vw;
+      height: auto;
+}
+
+.scoreboard.hover {
+      display: unset;
+      box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+      border-radius: min(1.5vw, 1.5vh);
+}
+
+.name-input {
+      width: 13vw;
+      height: 7vh;
+      margin-right: 1vw;
+      margin-left: 1vw;
+      margin-top: 1.35vh;
+      border: none;
+      border-radius: min(1.5vw, 1.5vh);
+      background-color: var(--tertiary-background-color);
+      box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+      color: var(--primary-text-color);
+      font-size: min(4vh, 4vw);
+      text-align: center;
+      padding: 0px;
+}

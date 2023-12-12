@@ -1,0 +1,19 @@
+<div class="nav-bar-top">
+      <div class="nav">
+            <a class="logo-link" routerLink="/home">{{title}}</a>
+            <div class="score-div">
+                  <input [(ngModel)]="this.name.x" placeholder="Spieler 1" type="text" class="name-input">
+                  <div class="score" [style.background-color]="(this.scoreClick == true) ? 'rgb(76, 76, 86)' : 'var(--tertiary-background-color)'" (mouseenter)="this.scoreboardHover(true)"
+                        (mouseleave)="this.scoreboardHover(false)" (click)="this.scoreboardClick()"
+                        [class.hover]="(this.scoreHover == true || this.scoreClick == true) && this.getScore().length > 0">
+                        <p class="x-score">╳</p>
+                        <p class="score-text">{{this.getPlayerScore("x")}} — {{this.getPlayerScore("o")}}</p>
+                        <p class="o-score">◯</p>
+                  </div>
+                  <input [(ngModel)]="this.name.o" placeholder="Spieler 2" type="text" class="name-input">
+                  <app-scoreboard class="scoreboard" (mouseenter)="this.scoreboardHover(true)"
+                        (mouseleave)="this.scoreboardHover(false)" (click)="this.scoreboardClick()"
+                        [class.hover]="(this.scoreHover == true || this.scoreClick == true) && this.getScore().length > 0"></app-scoreboard>
+            </div>
+      </div>
+</div>

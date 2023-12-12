@@ -1,0 +1,7 @@
+<div class="overlay" [class.hover]="this.hover == false">
+      <div class="popup-window" [class.hover]="this.hover == false" (mouseenter)="overlayHover(true)" (mouseleave)="overlayHover(false)" [style.width]>
+            <p *ngIf="this.winner!='noone'" class="message" [class.hover]="this.hover == false">{{winner}} hat gewonnen!</p>
+            <p *ngIf="this.winner=='noone'" class="message" [class.hover]="this.hover == false">Gleichstand</p>
+            <button class="new-game" [class.hover]="this.hover == false" (click)="this.restart()" [class.hover]="this.hover == false">Neues Spiel</button>
+      </div>
+</div>

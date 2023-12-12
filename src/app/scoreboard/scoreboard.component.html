@@ -1,0 +1,17 @@
+<div class="scoreboard">
+      <div class="entry-div">
+            <div class="devider"></div>
+            <ng-template ngFor let-score [ngForOf]="this.getScores()" let-i="index">
+                  <div class="entry" [style.justify-content]="(score == '╳' || score == '◯') ? 'space-between' : 'center'">
+                        <p class="entry-text" *ngIf="score == '╳' || score == '◯'">{{this.getLabel(score)}}</p>
+                        <p class="entry-text" [class.x]="this.score == '╳'" [class.o]="score == '◯'"
+                              [class.none]="score == 'Reset' || score == 'Unentschieden'">
+                              {{score}}</p>
+                  </div>
+            </ng-template>
+      </div>
+      <div class="devider" style="transform: rotate(180deg);"></div>
+      <div class="clear-div">
+            <button class="clear-button" (click)="this.clear()">Löschen</button>
+      </div>
+</div>
